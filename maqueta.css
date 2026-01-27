@@ -1,0 +1,52 @@
+:root {
+    --color-header-background: #dae8fc;
+    --color-header-border: #7394c3;
+    --color-nav-background: #fff2cc;
+    --color-nav-border: #d8ba60;
+    --color-aside-background: #60a917;
+    --color-aside-border: #448d0a;
+    --color-article1-background: #f8cecc;
+    --color-article1-border: #b85450;
+    --color-article2-background: #d5e8d4;
+    --color-article2-border: #82b367;
+    --color-footer-background: #1ba1e2;
+    --color-footer-border: #177bb6;
+}
+
+.bg-header { background-color: var(--color-header-background); }
+.border-header { border: 1px solid var(--color-header-border) ; }
+.bg-nav { background-color: var(--color-nav-background); }
+.border-nav { border: 1px solid var(--color-nav-border); }
+.bg-aside { background-color: var(--color-aside-background); }
+.border-aside { border: 1px solid var(--color-aside-border) ; }
+.bg-article1 { background-color: var(--color-article1-background); }
+.border-article1 { border: 1px solid var(--color-article1-border) ; }
+.bg-article2 { background-color: var(--color-article2-background); }
+.border-article2 { border: 1px solid var(--color-article2-border) ; }
+.bg-footer { background-color: var(--color-footer-background); }
+.border-footer { border: 1px solid var(--color-footer-border) ; }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    min-height: 50px;
+    margin: 10px;
+}
+
+nav {
+    min-height: 50px;
+    margin: 10px;
+}
+
+article {
+    min-height: 50px;
+    margin: 10px;
+}
+
+footer {
+    min-height: 50px;
+    margin: 10px;
+}

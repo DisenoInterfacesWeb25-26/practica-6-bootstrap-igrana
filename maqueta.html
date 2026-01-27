@@ -2,22 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1. Boceto Boostrap</title>
     <meta name="description" content="Interfaces, Práctica 6. Actividad 1. Boceto Boostrap">
     <meta name="author" content="Isabel Granados Palma">
-    <title>Actividad 1. Boceto Boostrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/maqueta.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="maqueta.css" rel="stylesheet">
 </head>
 <body>
-    <header></header>
-    <nav></nav>
-    <section>
-        <div class="articles">
-            <article></article>
-            <article></article>
+    <div class="container-fluid">
+        <!--Parte invariable-->
+        <div class="row">
+            <header class="col bg-header border-header"></header>
         </div>
-        <aside></aside>
-    </section>
-    <footer></footer>
+        <!--Parte variable-->
+        <div class="row">
+            <nav class="col bg-nav border-nav"></nav>
+        </div>
+        <div class="row">
+            <section class="col">
+                <div class="col">
+                    <article class="col bg-article1"></article>
+                    <article class="col bg-article1">
+                    </article>
+                </div>
+                    <div class="col">
+                    <article class="col bg-article1"></article>
+                    <article class="col bg-article1">
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="col bg-article1"></article>
+                    <article class="col bg-article1">
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="col bg-article1"></article>
+                    <article class="col bg-article1">
+                    </article>
+                </div>            
+                <div class="col">
+                    <article class="col bg-article2"></article>
+                    <article class="col bg-article2">
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="col bg-article2"></article>
+                    <article class="col bg-article2">
+                    </article>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <aside>
+            </aside>
+        </div>
+        <!--Parte invariable-->
+        <div class="row">
+            <footer class="col bg-footer">
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
