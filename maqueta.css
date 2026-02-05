@@ -54,3 +54,26 @@ aside {
 footer {
     min-height: 70px;
 }
+
+@media (min-width: 1200px) {
+
+    header {
+        min-height: 150px;
+    }
+
+    nav {
+        min-height: 150px;
+    }
+
+    .bg-article1 {
+        min-height: 500px;
+    }
+
+    .bg-article2 {
+        min-height: 600px;
+    }
+
+    footer {
+        min-height: 120px;;
+    }
+}
