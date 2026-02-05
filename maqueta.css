@@ -27,26 +27,29 @@
 .border-footer { border: 1px solid var(--color-footer-border) ; }
 
 * {
-    margin: 0;
-    padding: 0;
+
 }
 
 header {
-    min-height: 50px;
-    margin: 10px;
+    min-height: 70px;
 }
 
 nav {
-    min-height: 50px;
-    margin: 10px;
+    min-height: 70px;
 }
 
-article {
-    min-height: 50px;
-    margin: 10px;
+.bg-article1 {
+    min-height: 40px;
+}
+
+.bg-article2 {
+    min-height: 70px;
+}
+
+aside {
+    min-height: 70px;
 }
 
 footer {
-    min-height: 50px;
-    margin: 10px;
+    min-height: 70px;
 }

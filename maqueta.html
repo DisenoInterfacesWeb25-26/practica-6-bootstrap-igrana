@@ -6,62 +6,38 @@
     <title>Actividad 1. Boceto Boostrap</title>
     <meta name="description" content="Interfaces, Práctica 6. Actividad 1. Boceto Boostrap">
     <meta name="author" content="Isabel Granados Palma">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="maqueta.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid">
         <!--Parte invariable-->
-        <div class="row">
-            <header class="col bg-header border-header"></header>
-        </div>
+        <header class="my-3 mx-1 bg-header border-header"></header>
         <!--Parte variable-->
-        <div class="row">
-            <nav class="col bg-nav border-nav"></nav>
-        </div>
-        <div class="row">
-            <section class="col">
-                <div class="col">
-                    <article class="col bg-article1"></article>
-                    <article class="col bg-article1">
-                    </article>
-                </div>
-                    <div class="col">
-                    <article class="col bg-article1"></article>
-                    <article class="col bg-article1">
-                    </article>
-                </div>
-                <div class="col">
-                    <article class="col bg-article1"></article>
-                    <article class="col bg-article1">
-                    </article>
-                </div>
-                <div class="col">
-                    <article class="col bg-article1"></article>
-                    <article class="col bg-article1">
-                    </article>
-                </div>            
-                <div class="col">
-                    <article class="col bg-article2"></article>
-                    <article class="col bg-article2">
-                    </article>
-                </div>
-                <div class="col">
-                    <article class="col bg-article2"></article>
-                    <article class="col bg-article2">
-                    </article>
-                </div>
-            </section>
-        </div>
-        <div class="row">
-            <aside>
-            </aside>
-        </div>
+        <nav class="my-3 mx-1 bg-nav border-nav"></nav>
+        <!--Esta sección tiene margen 0 y padding interno en los 
+        div para crear las separaciones entre columnas y filas-->
+        <section class="row mx-0 gy-3">
+            <div class="col-6 px-1">
+                <article class="bg-article1 border-article1"></article>
+            </div>
+            <div class="col-6 px-1">
+                <article class="bg-article1 border-article1"></article>
+            </div>
+            <div class="col-6 px-1">
+                <article class="bg-article1 border-article1"></article>
+            </div>
+            <div class="col-6 px-1">
+                <article class="bg-article1 border-article1"></article>  
+            </div>
+        </section>
+            <article class="col my-3 mx-1 bg-article2 border-article2"></article>
+            <article class="col my-3 mx-1 bg-article2 border-article2"></article>
+            <aside class="col my-3 mx-1 d-none d-md-block"></aside>
         <!--Parte invariable-->
-        <div class="row">
-            <footer class="col bg-footer">
-            </footer>
-        </div>
+        <footer class="col my-3 mx-1 bg-footer border-footer"></footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
