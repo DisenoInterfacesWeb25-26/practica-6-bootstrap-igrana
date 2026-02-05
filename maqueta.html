@@ -10,32 +10,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid mx-1 my-4">
         <!--Parte invariable-->
-        <header class="my-3 mx-1 bg-header border-header"></header>
+        <header class="mb-4 bg-header border-header"></header>
         <!--Parte variable-->
-        <nav class="my-3 mx-1 bg-nav border-nav"></nav>
+        <nav class="mb-4 bg-nav border-nav"></nav>
         <!--Esta sección tiene margen 0 y padding interno en los 
         div para crear las separaciones entre columnas y filas-->
-        <section class="row mx-0 gy-3">
-            <div class="col-6 px-1">
-                <article class="bg-article1 border-article1"></article>
+        <main class="row"> 
+            <div class="col-md-2 mb-4 pe-3 d-none d-md-block">
+                <aside class="bg-aside border-aside"></aside>
             </div>
-            <div class="col-6 px-1">
-                <article class="bg-article1 border-article1"></article>
-            </div>
-            <div class="col-6 px-1">
-                <article class="bg-article1 border-article1"></article>
-            </div>
-            <div class="col-6 px-1">
-                <article class="bg-article1 border-article1"></article>  
-            </div>
-        </section>
-            <article class="col my-3 mx-1 bg-article2 border-article2"></article>
-            <article class="col my-3 mx-1 bg-article2 border-article2"></article>
-            <aside class="col my-3 mx-1 d-none d-md-block"></aside>
-        <!--Parte invariable-->
-        <footer class="col my-3 mx-1 bg-footer border-footer"></footer>
+            <div class="col-12 col-md-10 mb-4">
+                <section class="articulos1 row mb-4 gy-4">
+                    <div class="col-6">
+                        <article class="bg-article1 border-article1"></article>
+                    </div>
+                    <div class="col-6">
+                        <article class="bg-article1 border-article1"></article>
+                    </div>
+                    <div class="col-6">
+                        <article class="bg-article1 border-article1"></article>
+                    </div>
+                    <div class="col-6">
+                        <article class="bg-article1 border-article1"></article>  
+                    </div>
+                </section>
+                <section class="articulos2 row gy-4 mx-0">
+                    <article class="bg-article2 border-article2"></article>
+                    <article class="bg-article2 border-article2"></article>
+                </section>
+                </div>
+        </main>
+            <!--Parte invariable-->
+        <footer class="bg-footer border-footer"></footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
