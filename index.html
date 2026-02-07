@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <meta name="description" content="DIW, Práctica 6. Actividad 2">
+    <meta name="author" content="Isabel Granados Palma">
+    <link href="estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<body>
+    <header class="">
+        <!--LOGOTIPO-->
+        <img src="./images/ENIUN@2x.png" class="logo img-fluid rounded float-start" alt="imagen_logo">
+        <!--MENÚ CON DROPDOWN Y BUSCADOR con margin-start-auto para que esté a la derecha y en versión clara-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler1">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Contactos</a>
+                        </li>
+                    </ul>
+                    <!--BUSCADOR-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Buscar...</button>
+                    </form>
+                </div>
+            </div>
+        </navbar>
+    </header>
+    <main>
+        <section id="seccionCarousel">
+            <!--CARRUSEL DE TRES IMÁGENES que se para al hacer hover y con un intervalo de 1diapositiva/5s-->
+            <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!--object-fit: cover Para que no se deformen las imágenes-->
+                        <img src="./images/ENIUNCreatividadDiseno.png" class="carousel-img d-block w-100" alt="imagen_carrusel1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/ENIUNCreatividadSeo.png" class="carousel-img d-block w-100" alt="imagen_carrusel2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/ENIUNCreatividadSocialNetwork.png" class="carousel-img d-block w-100" alt="imagen_carrusel3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="seccionPresentacion" class="bg-secondary">
+            <h1>Bienvenidos a esta página</h1>
+            <h2>Párrafo explicando la página</h2>
+        </section>
+        <!--TRES CARDS-->
+        <section class="seccionCards">
+            <h2>Sección de Cards</h2>
+            <article class="card">
+                <img src="./images/contenido-incrustado.png" class="card-img-top" alt="imagen1">
+                <div class="card-body">
+                    <h5 class="card-title">Primera Card</h5>
+                    <p class="card-text">Información sobre la primera Card.</p>
+                    <a href="#" class="btn btn-primary">Ver artículo</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/contenido-incrustado.png" class="card-img-top" alt="imagen1">
+                <div class="card-body">
+                    <h5 class="card-title">Segunda Card</h5>
+                    <p class="card-text">Información sobre la primera Card.</p>
+                    <a href="#" class="btn btn-primary">Ver artículo</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./images/contenido-incrustado.png" class="card-img-top" alt="imagen1">
+                <div class="card-body">
+                    <h5 class="card-title">Tercera Card</h5>
+                    <p class="card-text">Información sobre la primera Card.</p>
+                    <a href="#" class="btn btn-primary">Ver artículo</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="bg-destacado">
+        <h3>Enium.com</h3>
+    </footer>
+</body>
+</html>

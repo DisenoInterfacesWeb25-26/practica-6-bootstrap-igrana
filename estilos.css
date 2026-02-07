@@ -1,0 +1,39 @@
+:root {
+    --color-destacado: #18a2b7;
+}
+
+.bg-destacado { background-color: var(--color-destacado);}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 90px;
+}
+
+.logo {
+    max-height: 60px;
+}
+
+.carousel-img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+article {
+    width: 100%;
+}
+
+.card {
+    width: 80%;
+}
+
+.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    min-height: 90px;
+}
