@@ -12,13 +12,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <body>
-    <header class="">
+    <header class="p-3 m-xl-3">
         <!--LOGOTIPO-->
         <img src="./images/ENIUN@2x.png" class="logo img-fluid rounded float-start" alt="imagen_logo">
-        <!--MENÚ CON DROPDOWN Y BUSCADOR con margin-start-auto para que esté a la derecha y en versión clara-->
-        <nav class="navbar navbar-expand-lg">
+        <!--MENÚ Y BUSCADOR con margin-start-auto para que esté a la derecha y en versión clara-->
+        <nav class="navbar navbar-expand-lg p-0">
             <div class="container-fluid">
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler ms-auto m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon navbar-light"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler1">
@@ -29,9 +29,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
+                        <!--BOTÓN CON DROPDOWN-->
                         <li class="nav-item">
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Servicios
                                 </button>
                                 <ul class="dropdown-menu">
@@ -48,7 +49,8 @@
                     <!--BUSCADOR-->
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Buscar...</button>
+                        <!--No sé por qué este botón no se muestra de color verde-->
+                        <button class="btn btn-personalizado" type="submit">Buscar...</button>
                     </form>
                 </div>
             </div>
@@ -57,7 +59,7 @@
     <main>
         <section id="seccionCarousel">
             <!--CARRUSEL DE TRES IMÁGENES que se para al hacer hover y con un intervalo de 1diapositiva/5s-->
-            <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="5000">
+            <div id="carouselAutoplaying" class="carousel slide m-xl-3" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="5000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <!--object-fit: cover Para que no se deformen las imágenes-->
@@ -70,55 +72,53 @@
                         <img src="./images/ENIUNCreatividadSocialNetwork.png" class="carousel-img d-block w-100" alt="imagen_carrusel3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
-        <section id="seccionPresentacion" class="bg-secondary">
-            <h1>Bienvenidos a esta página</h1>
-            <h2>Párrafo explicando la página</h2>
+        <section id="seccionPresentacion" class="bg-fondo-presentacion p-responsive-personalizado m-xl-3">
+            <h1>Hello, world!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut, pharetra laoreet aptent 
+                praesent libero parturient vestibulum semper inceptos, curabitur taciti dictumst fames 
+                pellentesque iaculis justo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut, pharetra laoreet aptent 
+                praesent libero parturient.</p>
+            <a href="#" class="btn btn-personalizado">Learn more</a>
         </section>
         <!--TRES CARDS-->
-        <section class="seccionCards container-fluid mx-2 my-4">
+        <section class="seccionCards p-responsive-personalizado">
             <div class="row">
-                <h2>Sección de Cards</h2>
+                <h2 class="pagination justify-content-center p-md-3">Artículos</h2>
             </div>
             <div class="row">
-                <article class="card col-12 col-md-6 col-xl-4">
+                <article class="card border-light col-12 col-md-6 col-xl-4">
                     <img src="./images/contenido-incrustado.png" class="card-img-top" alt="imagen1">
                     <div class="card-body">
                         <h5 class="card-title">Primera Card</h5>
-                        <p class="card-text">Información sobre la primera Card.</p>
-                        <a href="#" class="btn btn-primary">Ver artículo</a>
+                        <p class="card-text">Información sobre la primera Card. </p>
+                        <a href="#" class="btn btn-personalizado">Ver artículo</a>
                     </div>
                 </article>
-                <article class="card col-12 col-md-6 col-xl-4">
+                <article class="card border-light col-12 col-md-6 col-xl-4">
                     <img src="./images/contenido-incrustado.png" class="card-img-top" alt="imagen1">
                     <div class="card-body">
                         <h5 class="card-title">Segunda Card</h5>
-                        <p class="card-text">Información sobre la primera Card.</p>
-                        <a href="#" class="btn btn-primary">Ver artículo</a>
+                        <p class="card-text">Información sobre la segunda Card.</p>
+                        <a href="#" class="btn btn-personalizado">Ver artículo</a>
                     </div>
                 </article>
-                <article class="card col-12 col-md-6 col-xl-4">
+                <article class="card border-light col-12 col-md-6 col-xl-4">
                     <img src="./images/contenido-incrustado.png" class="card-img-top" alt="imagen1">
                     <div class="card-body">
                         <h5 class="card-title">Tercera Card</h5>
-                        <p class="card-text">Información sobre la primera Card.</p>
-                        <a href="#" class="btn btn-primary">Ver artículo</a>
+                        <p class="card-text">Información sobre la tercera Card.</p>
+                        <a href="#" class="btn btn-personalizado">Ver artículo</a>
                     </div>
                 </article>
             </div>
         </section>
     </main>
-    <footer class="bg-destacado">
-        <h3>Enium.com</h3>
+    <footer class="bg-fondo-footer row mx-0 mb-2 m-xl-3 p-3 p-xl-5">
+        <div class="col-6"><h4>Enium.com</h4></div>
+        <div class="col-6"><p>Información extra</p></div>
     </footer>
 </body>
 </html>
